@@ -73,3 +73,38 @@ a:active {
 #activites > .container > hr {
   background-color: #219433;
 }
+
+hr {
+  margin-top: 40px;
+  width: 80%;
+}
+
+/*Comment box styling*/
+.pb-cmnt-container {
+ font-family: Lato;
+ margin-top: 100px;
+ margin-bottom: 20px;
+}
+
+.pb-cmnt-textarea {
+ resize: none;
+ padding: 20px;
+ height: 130px;
+ width: 100%;
+ border: 1px solid #F2F2F2;
+}
+/*Comment-display box styling*/
+.user_name{
+ font-size:14px;
+ font-weight: bold;
+}
+
+.media-left > img {
+ width: 30px;
+ height: 35px;
+ padding: 2px;
+}
+.comments-list .media{
+ border-bottom: 1px dotted #ccc;
+ padding: 5px;
+}
