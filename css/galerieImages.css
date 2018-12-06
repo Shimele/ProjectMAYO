@@ -1,9 +1,9 @@
 
-html, body {
-    margin: 0 auto;
-    height: 100%;
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
 }
-
 a:hover {
   text-decoration: none;
   background-color: none;
@@ -27,13 +27,6 @@ a:active {
 }
 .navbar-light .navbar-nav .nav-link {
   color: #383838;
-}
-
-body {
-    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
-    min-height: 100vh;
-    font: normal 16px sans-serif;
-    padding: 60px 0;
 }
 
 .container.gallery-container {
