@@ -9,9 +9,9 @@ html, body {
   width:230px;
   height:100px;
 }
-NOTRENOTRENOTRENOTRE
+
 .navbar-light .navbar-nav .nav-link {
-  color: #383838;
+  color: #000;
 }
 
 a:hover {
