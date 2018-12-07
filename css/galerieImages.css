@@ -9,12 +9,6 @@ a:hover {
   background-color: none;
   color: #219433;
 }
-.nav-link > a:hover {
-    text-decoration: none;
-    background-color: none;
-    color: #219433;
-  }
-
 
 a {
   color: black;
@@ -126,6 +120,7 @@ a:active {
   }
   
   .hovereffect img {
+    height: 250px;
     display: block;
     position: relative;
     -webkit-transition: all 0.35s;
