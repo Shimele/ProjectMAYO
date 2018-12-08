@@ -1,0 +1,103 @@
+
+
+html, body {
+    margin: 0 auto;
+    height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: none;
+  color: #219433;
+}
+
+
+a {
+  color: black;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+a:active {
+  color: hotpink;
+}
+
+.navbar-brand > img {
+  width:200px;
+  height:100px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+.member-title {
+	width: 100%;
+    height: 40px;
+    background-color: #218E36;
+}
+
+.textZone {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .textZone h3 {
+    margin: 20px;
+  }
+  .textZone p {
+    padding: 10px;
+  }
+  .textZone img {
+    max-width: 100%;
+    height: auto;
+  }
+
+hr {
+  background-color: #219433;
+  height:1px;
+  width: 80%;
+}
+
+
+/*Comment box styling*/
+.pb-cmnt-container {
+ font-family: Lato;
+ margin-top: 100px;
+ margin-bottom: 20px;
+}
+
+.pb-cmnt-textarea {
+ resize: none;
+ padding: 20px;
+ height: 130px;
+ width: 100%;
+ border: 1px solid #F2F2F2;
+}
+/*Comment-display box styling*/
+.user_name{
+ font-size:14px;
+ font-weight: bold;
+}
+
+.media-left > img {
+ width: 30px;
+ height: 35px;
+ padding: 2px;
+}
+.comments-list .media{
+ border-bottom: 1px dotted #ccc;
+ padding: 5px;
+}
+
+#comment-display {
+  margin-bottom: 10px;
+}
+.footer {
+	width: 100%;
+    height: 40px;
+    background-color: #218E36;
+    margin-top: 30px;
+    padding: 5px;
+}
+
