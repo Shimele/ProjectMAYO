@@ -14,7 +14,9 @@ a:hover {
   background-color: none;
   color: #219433;
 }
-
+.dropdown-item:hover {
+  background-color: #71a812;
+}
 
 a {
   color: black;
@@ -33,7 +35,7 @@ a:active {
 .footer {
 	width: 100%;
     height: 40px;
-    background-color: #218E36;
+    background-color: #71a812;
     margin-top: 30px;
     padding: 5px;
 }
@@ -47,7 +49,7 @@ a:active {
   float: left;
   text-align: right;
   margin-right: 10px; 
-  color: #219433;
+  color: #71a812;;
 }
 .agenda .agenda-date .shortdate {
   font-size: 0.75em; 
@@ -71,7 +73,7 @@ a:active {
 }
 
 #activites > .container > hr {
-  background-color: #219433;
+  background-color: #71a812;;
 }
 
 hr {

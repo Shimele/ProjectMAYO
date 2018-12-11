@@ -4,7 +4,6 @@ html, body {
     height: 100%;
 }
 
-
 .navbar-brand > img {
   width:230px;
   height:100px;
@@ -18,6 +17,9 @@ a:hover {
   text-decoration: none;
   background-color: none;
   color: #219433;
+}
+.dropdown-item:hover {
+  background-color: #71a812;
 }
 
 
@@ -97,7 +99,7 @@ a:active {
 .footer {
 	width: 100%;
     height: 40px;
-    background-color: #218E36;
+    background-color: #71a812;
     margin-top: 30px;
     padding: 5px;
 }
