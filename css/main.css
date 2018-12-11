@@ -31,14 +31,17 @@ a:active {
   color: hotpink;
 }
 
+#carousel {
+  width:80%;
+  margin: auto;
+}
 .carousel-inner > .carousel-item > img {
-  width:440px;
+  width:80%;
   height:460px;
 }
 
 #infos {
     width: 70%;
-
     position: relative;
     top:15px;
     bottom: 0;

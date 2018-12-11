@@ -46,11 +46,16 @@ a:active {
     margin: 20px;
   }
   .textZone p {
-    padding: 10px;
+    padding: 15px;
   }
-  .textZone img {
+  .textZoneImage img {
     max-width: 100%;
     height: auto;
+  }
+  .textZoneSecondImage img {
+    width:250px;
+    height: 180px;
+    border-radius: 50%;
   }
 
 hr {
