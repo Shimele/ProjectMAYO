@@ -11,13 +11,13 @@ html, body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #000;
+  color: #219433;
 }
 
 a:hover {
   text-decoration: none;
   background-color: none;
-  color: #219433;
+  color: #000;
 }
 
 .dropdown-item:hover {
@@ -25,14 +25,14 @@ a:hover {
   }
 
 a {
-  color: black;
+  color: #219433;
   padding-right: 20px;
   text-decoration: none;
 }
 
-a:active {
-  color: hotpink;
-}
+.navbar-light .navbar-nav .active>.nav-item {
+    color: hotpink;
+  }
 
 .jumbotron {
     margin-bottom: 5%;
@@ -94,10 +94,22 @@ textarea.form-control{
     font-family: 'Courier New', Courier, monospace;
     color: #219433;
 }
+/*footer styling*/
 .footer {
-	width: 100%;
-    height: 40px;
-    background-color: #71a812;
-    margin-top: 30px;
-    padding: 5px;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  margin-top: 30px;
+  padding: 5px;
+  text-align: center;
+}
+.footer span{
+  border-right: 2px solid #333;
+}
+.footer a{
+  padding: 3px;
+  color: #219433;
+}
+.footer p{
+  font-weight: bolder;
 }
