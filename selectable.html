@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta name="description" content="Lwanga Kisito">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/messEvenement.css">
+
+	<title>Chorale Lwanga Kisito</title>
+  <link rel="icon" type= "image/jpg" href="img/logoIcon.jpg">
+   <!-- calendar links -->
+<link href='css/fullcalendar.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='JS/moment.min.js'></script>
+<script src='JS/jquery.min.js'></script>
+<script src='JS//fullcalendar.min.js'></script>
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      defaultDate: '2019-01-01',
+      navLinks: true, // can click day/week names to navigate views
+      //selectable: true,
+      selectHelper: true,
+      select: function(start, end) {
+        var title = prompt('Event Title:');
+        var eventData;
+        if (title) {
+          eventData = {
+            title: title,
+            start: start,
+            end: end
+          };
+          $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+        }
+        $('#calendar').fullCalendar('unselect');
+      },
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'Mess:click pour infos',
+          url: 'messEvenement.html',
+          start: '2019-01-06',
+          color: 'green'
+        },
+        {
+          title: 'Mess:click pour infos',
+          url: 'messEvenement.html',
+          start: '2019-01-13',
+          color: 'green'
+        },
+        {
+          id: 999,
+          title: 'Evenement regulier',
+          start: '2019-01-09',
+          color: 'hotpink'
+        },
+        {
+          id: 999,
+          title: 'Evenement regulier',
+          start: '2019-01-26',
+          color: 'hotpink'
+        },
+        {
+          title: 'Mess:click pour infos',
+          url: 'messEvenement.html',
+          start: '2019-01-20',
+          color: 'green'
+        },
+        {
+          title: 'Mess:click pour infos',
+          url: 'messEvenement.html',
+          start: '2019-01-27',
+          color: 'green'
+        },
+        {
+          title: 'Autres evenement',
+          start: '2019-01-17',
+          color: 'puple'
+        },
+        {
+          title: 'Autres evenement',
+          start: '2019-01-21',
+          color: 'puple'
+        },
+        {
+          title: 'Autres evenement',
+          start: '2019-01-05',
+          color: 'puple'
+        },
+        {
+          title: 'Dinner',
+          start: '2018-03-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2018-03-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'main.html',
+          start: '2018-03-28'
+        }
+      ]
+    });
+
+  });
+
+</script>
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="container-fluid"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item nav-link active">
+                <a class="nav-item" href="main.html">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item nav-link" style>
+                <a class="nav-item" href="equipe.html">Notre Equipe</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qui sommes-nous
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="presentation.html">Presentation chorale</a>
+                  <a class="dropdown-item" href="status.html">Status de la chorale</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="reglement.html">Reglement interieur</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="secondNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Notre repertoire
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="selectable.html">Messes</a>
+                  <a class="dropdown-item" href="selectable.html">Evenements</a>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <a class="nav-item" href="activites.html">Nos Activites</a>
+              </li>
+              <li class="nav-item nav-link">
+                <a class="nav-item" href="ilsEnParlent.html">Ils en parlent</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="secondNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Galerie</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="galerieImages.html">Photos</a>
+                  <a class="dropdown-item" href="galerieVideos.html">Videos</a>
+                </div>
+              </li>
+              <li class="nav-item nav-link">
+                <a class="nav-item" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+  <div id='calendar'></div>
+
+  <hr />
+	<section id="comment-box">
+			<div class="container pb-cmnt-container">
+				<div class="row">
+						<div class="col-md-6 offset-md-3">
+								<div class="card card-info">
+										<div class="card-block">
+											<textarea placeholder="Vos commentaires ici!" class="pb-cmnt-textarea"></textarea>
+										</div>
+										<button class="btn btn-outline-success float-xs-right" type="button">Partagez</button>
+								</div>
+						</div>
+				</div>
+		</div>
+	</section>
+	<section id="comment-display">
+			<div class="container">
+				<div class="row">
+						<div class="col-md-8">
+							<div class="page-header">
+								<h1> Les Commentaires </h1>
+							</div> 
+							<div class="comments-list">
+									<div class="media">
+											<p class="pull-right"><small>5 days ago</small></p>
+												<a class="media-left" href="#">
+													<img src="img/commenter.png">
+												</a>
+												<div class="media-body">
+													<h4 class="media-heading user_name">Meemee Kouper</h4>
+													<p></p>Wow! this is really great.</p>
+												</div>
+										</div>
+									<div class="media">
+											<p class="pull-right"><small>5 days ago</small></p>
+												<a class="media-left" href="#">
+													<img src="img/commenter.png">
+												</a>
+												<div class="media-body">
+														
+													<h4 class="media-heading user_name">Tom Tom</h4>
+													Wow! this is really great.
+												</div>
+										</div>
+									<div class="media">
+											<p class="pull-right"><small>5 days ago</small></p>
+												<a class="media-left" href="#">
+													<img src="img/commenter.png">
+												</a>
+												<div class="media-body">
+														
+													<h4 class="media-heading user_name">John Doe</h4>
+													Wow! this is really great.
+												</div>
+										</div>
+									<div class="media">
+											<p class="pull-right"><small>5 days ago</small></p>
+												<a class="media-left" href="#">
+													<img src="img/commenter.png">
+												</a>
+												<div class="media-body">
+														
+													<h4 class="media-heading user_name">Jane Doe</h4>
+													Wow! this is really great.
+													
+												</div>
+											</div>
+							</div>
+								
+								
+								
+						</div>
+				</div>
+		</div>
+	</section>
+		
+	<section id='footer'>
+	<footer class="footer">&copy; Copyright 2018 </footer>
+	</section>
+
+</body>
+</html>
