@@ -34,9 +34,28 @@ a {
     color: hotpink;
   }
 
+  .member-title {
+	width: 100%;
+  height: 45px;
+	background-color: #71a812;
+	text-align: center;
+}
+.member-title h3 {
+  padding: 10px 0 0 30px;
+  color: #F2F2F2;
+}
+
 .jumbotron {
     margin-bottom: 5%;
     text-align: center;
+}
+.jumbotron-inner {
+  border: 1px grey solid;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 5px;
+  overflow-wrap:break-word;
 }
 
 .display-4 {

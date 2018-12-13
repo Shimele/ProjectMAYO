@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active>.nav-item {
   color:hotpink;
 }
 
@@ -33,8 +33,13 @@ a {
 
 .member-title {
 	width: 100%;
-    height: 40px;
-    background-color: #71a812;
+  height: 45px;
+	background-color: #71a812;
+	text-align: center;
+}
+.member-title h3 {
+  padding: 10px 0 0 30px;
+  color: #F2F2F2;
 }
 .textZone {
     margin: 0 auto;
